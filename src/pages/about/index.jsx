@@ -1,12 +1,15 @@
+import { Link } from "react-router-dom";
+
 export function AboutPage() {
     return (
         <div className="container mx-auto">
             <div className="flex justify-center items-center w-full mt-6">
                 <div className="lg:w-[970px] w-[95%] rounded-3xl bg-white p-5 px-10">
-                    <div className="text-[color:#41B883] md:mt-16 mt-5">
-                        <a href="#home">
-                            Home &gt; About
-                        </a>
+                    <div className="text-[color:#41B883] md:mt-16 mt-5 flex item-center gap-x-1">
+                        <Link to="/">
+                            Home  
+                        </Link>
+                        &gt; About
                     </div>
                     <div className="font-bold lg:text-[48px] md:text-[32px] sm:text-[24px] text-[16px] mt-4">
                         Tentang Komunitas Lombok Tengah Developer (Loteng Dev)
