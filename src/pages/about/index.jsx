@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import {Motion}  from "../framer-motion";// For Motion in Text
 
 export function AboutPage() {
     return (
@@ -11,11 +12,31 @@ export function AboutPage() {
                         </Link>
                         &gt; About
                     </div>
-                    <div className="font-bold lg:text-[48px] md:text-[32px] sm:text-[24px] text-[16px] mt-4">
+                    <Motion.div 
+                     initial={{ opacity: 0, x: -100 }}
+                     whileInView={{ opacity: 1, x: 0 }}
+                     viewport={{ once: true }}
+                     transition={{
+                       duration: 0.8,
+                       type: "spring",
+                       stiffness: 110,
+                       delay: 0,
+                     }}
+                    className="font-bold lg:text-[48px] md:text-[32px] sm:text-[24px] text-[16px] mt-4">
                         Tentang Komunitas Lombok Tengah Developer (Loteng Dev)
-                    </div>
+                    </Motion.div>
                     <hr className="border-1 border-grey w-full rounded-3xl md:mt-6 mt-2" />
-                    <div className="mt-5 mb-16 text-justify text-[18px]">
+                    <Motion.div
+                     initial={{ opacity: 0, x: -100 }}
+                     whileInView={{ opacity: 1, x: 0 }}
+                     viewport={{ once: true }}
+                     transition={{
+                       duration: 0.8,
+                       type: "spring",
+                       stiffness: 110,
+                       delay: 0,
+                     }}
+                     className="mt-5 mb-16 text-justify text-[18px]">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex molestiae quos veritatis nemo sit praesentium aperiam quasi voluptatum quisquam unde delectus mollitia eveniet rem quia, saepe aliquam, consequuntur similique? Vitae.
                         <br />
                         <br />
@@ -25,7 +46,7 @@ export function AboutPage() {
                         <br /> 
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius temporibus vitae at. Consequatur reiciendis sit quidem, impedit, facere aperiam nostrum delectus dolore dolor quibusdam harum animi amet repellendus, sunt
                         voluptatibus.
-                    </div>
+                    </Motion.div>
                 </div>
             </div>
         </div>
