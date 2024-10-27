@@ -9,6 +9,7 @@ import { HomePage } from './pages/home/index.jsx';
 import { SpeakerPage } from './pages/speaker/index.jsx';
 import { AboutPage } from './pages/about/index.jsx';
 import { Footer } from './components/Footer/index.jsx';
+import ScrollToTopButton from "./components/ScrollToTopButton";
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -22,6 +23,7 @@ function App() {
         <Route path="/speaker" element={<SpeakerPage />} />
         <Route path="/about" element={<AboutPage />} />
       </Routes>
+      <ScrollToTopButton/>
       <Footer />
     </>
   )
