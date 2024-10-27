@@ -22,7 +22,7 @@ function CTAButtons() {
 export default function Navbar() {
     return (
         <nav className="px-6 py-4 flex items-center shadow-md">
-            <Brand url="/" />
+            <Brand url="/"/>
             <ul className="hidden lg:flex flex-grow pl-10 list-none">
                 <li className="mr-8">
                     <Link to="/">Home</Link>
