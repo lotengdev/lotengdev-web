@@ -4,7 +4,7 @@ export function Footer() {
     return (
         <footer class="p-4">
             <div class="container mx-auto mt-5 mb-5 flex justify-center items-center">
-                <div class="border-t-[1px] rounded-lg border-grey sm:w-full w-[95%]"></div>
+                <hr class="border-t-[1px] rounded-lg border-grey sm:w-full w-[95%]" />
             </div>
             <ul class="flex flex-row w-full justify-center items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
                 <li>
