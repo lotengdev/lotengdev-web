@@ -2,7 +2,7 @@ import PlayIcon from '@/assets/icons/play.svg'
 
 export function EventPage() {
     return (
-        <div className="bg-[#F5F5F5] mt-14">
+        <div className="bg-[#F5F5F5] pt-14">
             <header className="text-center w-full mb-16">
                 <h1 className="text-[20px] font-bold text-[color:#41B883] ">
                     Semua Acara
