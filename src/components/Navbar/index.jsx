@@ -30,6 +30,7 @@ export default function Navbar() {
                 <li className="mr-8"><Link to="/event">Acara</Link></li>
                 <li className="mr-8"><Link to="/speaker">Pembicara</Link></li>
                 <li className="mr-8"><Link to="/about">Tentang</Link></li>
+                <li className="mr-8"><Link to="/contact">Kontak</Link></li>
             </ul>
             <CTAButtons />
             <div className="lg:hidden flex flex-grow justify-end">
