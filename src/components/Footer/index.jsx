@@ -19,6 +19,24 @@ export function Footer() {
                 <li>
                     <Link to={'/about'} class="mr-4 md:mr-6">About</Link>
                 </li>
+                <li>
+                    <a href="https://www.instagram.com/lotengdev/" target="_blank" rel="noopener noreferrer">
+                        <img 
+                            src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" 
+                            alt="Instagram Logo"  
+                            style={{ display: 'inline-block', gap: '15px', width: '40px', height: '40px' }}
+                        />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/@lotengdev4516" target="_blank" rel="noopener noreferrer">
+                        <img 
+                            src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" 
+                            alt="YouTube Logo" 
+                            style={{ display: 'inline-block', gap: '15px', width: '40px', height: '40px', paddingLeft: '4px' }}
+                        />
+                    </a>
+                </li>
             </ul>
         </footer>
     )
