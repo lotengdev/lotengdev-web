@@ -16,138 +16,40 @@ export function SpeakerPage() {
             <section className="container mx-auto">
                 <div
                     className="w-full lg:h-screen h-auto grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 gap-y-4 content-around">
-                    <div className="flex items-center justify-center">
-                        <div className="w-[260px] h-auto">
-                            <div className=" w-[260px] h-[260px] rounded-[24px] overflow-hidden">
-                                <img src="./images/Frame 13.png" alt="images"/>
-                            </div>
-                            <div
-                                className="w-full font-bold md:text-left text-center text-[24px] text-[color:#606060] mt-[14px]">
-                                Jenny Wilson
-                            </div>
-                            <div className="w-full flex md:justify-start justify-center md:items-start items-center">
-                                <a href="#">
-                                    <img className="w-[23px] h-[23px] mr-2" src={LinkedinIcon} alt="icon_linkedin"/>
-                                </a>
-                                <a href="#">
-                                    <img className="w-[23px] h-[23px] mr-2" src={GithubIcon} alt="icon_github"/>
-                                </a>
-                                <a href="#">
-                                    <img className="w-[23px] h-[23px]" src={WebsiteIcon} alt="icon_website"/>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="flex items-center justify-center">
-                        <div className="w-[260px] h-auto">
-                            <div className=" w-[260px] h-[260px] rounded-[24px] overflow-hidden">
-                                <img src="./images/Frame 14.png" alt="images"/>
-                            </div>
-                            <div
-                                className="w-full font-bold md:text-left text-center text-[24px] text-[color:#606060] mt-[14px]">
-                                Esther Howard
-                            </div>
-                            <div className="w-full flex md:justify-start justify-center md:items-start items-center">
-                                <a href="#">
-                                    <img className="w-[23px] h-[23px] mr-2" src={LinkedinIcon} alt="icon_linkedin"/>
-                                </a>
-                                <a href="#">
-                                    <img className="w-[23px] h-[23px] mr-2" src={GithubIcon} alt="icon_github"/>
-                                </a>
-                                <a href="#">
-                                    <img className="w-[23px] h-[23px]" src={WebsiteIcon} alt="icon_website"/>
-                                </a>
+                    {[
+                        { name: "Jenny Wilson", imgSrc: "./images/Frame 13.png" },
+                        { name: "Esther Howard", imgSrc: "./images/Frame 14.png" },
+                        { name: "Leslie Alexander", imgSrc: "./images/Frame 15.png" },
+                        { name: "Bessie Cooper", imgSrc: "./images/Frame 22.png" },
+                        { name: "Floyd Miles", imgSrc: "./images/Frame 23.png" },
+                        { name: "Kathryn Murphy", imgSrc: "./images/Frame 24.png" },
+                    ].map((speaker, index) => (
+                        <div className="flex items-center justify-center" key={index}>
+                            <div className="w-[260px] h-auto">
+                                <div className="w-[260px] h-[260px] rounded-[24px] overflow-hidden">
+                                    <img
+                                        src={speaker.imgSrc}
+                                        alt="images"
+                                        className="transition-transform duration-300 hover:scale-105 hover:shadow-lg"
+                                    />
+                                </div>
+                                <div className="w-full font-bold md:text-left text-center text-[24px] text-[color:#606060] mt-[14px]">
+                                    {speaker.name}
+                                </div>
+                                <div className="w-full flex md:justify-start justify-center md:items-start items-center">
+                                    <a href="#">
+                                        <img className="w-[23px] h-[23px] mr-2" src={LinkedinIcon} alt="icon_linkedin"/>
+                                    </a>
+                                    <a href="#">
+                                        <img className="w-[23px] h-[23px] mr-2" src={GithubIcon} alt="icon_github"/>
+                                    </a>
+                                    <a href="#">
+                                        <img className="w-[23px] h-[23px]" src={WebsiteIcon} alt="icon_website"/>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="flex items-center justify-center">
-                        <div className="w-[260px] h-auto">
-                            <div className=" w-[260px] h-[260px] rounded-[24px] overflow-hidden">
-                                <img src="./images/Frame 15.png" alt="images"/>
-                            </div>
-                            <div
-                                className="w-full font-bold md:text-left text-center text-[24px] text-[color:#606060] mt-[14px]">
-                                Leslie Alexander
-                            </div>
-                            <div className="w-full flex md:justify-start justify-center md:items-start items-center">
-                                <a href="#">
-                                    <img className="w-[23px] h-[23px] mr-2" src={LinkedinIcon} alt="icon_linkedin"/>
-                                </a>
-                                <a href="#">
-                                    <img className="w-[23px] h-[23px] mr-2" src={GithubIcon} alt="icon_github"/>
-                                </a>
-                                <a href="#">
-                                    <img className="w-[23px] h-[23px]" src={WebsiteIcon} alt="icon_website"/>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="flex items-center justify-center">
-                        <div className="w-[260px] h-auto">
-                            <div className=" w-[260px] h-[260px] rounded-[24px] overflow-hidden">
-                                <img src="./images/Frame 22.png" alt="images"/>
-                            </div>
-                            <div
-                                className="w-full font-bold md:text-left text-center text-[24px] text-[color:#606060] mt-[14px]">
-                                Bessie Cooper
-                            </div>
-                            <div className="w-full flex md:justify-start justify-center md:items-start items-center">
-                                <a href="#">
-                                    <img className="w-[23px] h-[23px] mr-2" src={LinkedinIcon} alt="icon_linkedin"/>
-                                </a>
-                                <a href="#">
-                                    <img className="w-[23px] h-[23px] mr-2" src={GithubIcon} alt="icon_github"/>
-                                </a>
-                                <a href="#">
-                                    <img className="w-[23px] h-[23px]" src={WebsiteIcon} alt="icon_website"/>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="flex items-center justify-center">
-                        <div className="w-[260px] h-auto">
-                            <div className=" w-[260px] h-[260px] rounded-[24px] overflow-hidden">
-                                <img src="./images/Frame 23.png" alt="images"/>
-                            </div>
-                            <div
-                                className="w-full font-bold md:text-left text-center text-[24px] text-[color:#606060] mt-[14px]">
-                                Floyd Miles
-                            </div>
-                            <div className="w-full flex md:justify-start justify-center md:items-start items-center">
-                                <a href="#">
-                                    <img className="w-[23px] h-[23px] mr-2" src={LinkedinIcon} alt="icon_linkedin"/>
-                                </a>
-                                <a href="#">
-                                    <img className="w-[23px] h-[23px] mr-2" src={GithubIcon} alt="icon_github"/>
-                                </a>
-                                <a href="#">
-                                    <img className="w-[23px] h-[23px]" src={WebsiteIcon} alt="icon_website"/>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="flex items-center justify-center">
-                        <div className="w-[260px] h-auto">
-                            <div className=" w-[260px] h-[260px] rounded-[24px] overflow-hidden">
-                                <img src="./images/Frame 24.png" alt="images"/>
-                            </div>
-                            <div
-                                className="w-full font-bold md:text-left text-center text-[24px] text-[color:#606060] mt-[14px]">
-                                Kathryn Murphy
-                            </div>
-                            <div className="w-full flex md:justify-start justify-center md:items-start items-center">
-                                <a href="#">
-                                    <img className="w-[23px] h-[23px] mr-2" src={LinkedinIcon} alt="icon_linkedin"/>
-                                </a>
-                                <a href="#">
-                                    <img className="w-[23px] h-[23px] mr-2" src={GithubIcon} alt="icon_github"/>
-                                </a>
-                                <a href="#">
-                                    <img className="w-[23px] h-[23px]" src={WebsiteIcon} alt="icon_website"/>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    ))}
                 </div>
             </section>
             <section className="container pt-20 pb-20 mx-auto text-center">
