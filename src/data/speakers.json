@@ -1,0 +1,76 @@
+{ 
+    "speakers": [
+        {
+            "name": "Muhammad Farid Zia",
+            "jobTitle": "Frontend Developer",
+            "photo":"/images/Frame 13.png",
+            "linkedin": "",
+            "github": "",
+            "website": ""
+        },
+        {
+            "name": "Eby Sofyan",
+            "jobTitle": "Fullstack Developer",
+            "photo":"/images/Frame 13.png",
+            "linkedin": "",
+            "github": "",
+            "website": ""
+        },
+        {
+            "name": "Rahmat Fathoni",
+            "jobTitle": "Backend Developer",
+            "photo":"/images/Frame 13.png",
+            "linkedin": "",
+            "github": "",
+            "website": ""
+        },
+        {
+            "name": "Roby Huzwandar",
+            "jobTitle": "Frontend Developer",
+            "photo":"/images/Frame 13.png",
+            "linkedin": "",
+            "github": "",
+            "website": ""
+        },
+        {
+            "name": "Ahmad Muhardian",
+            "jobTitle": "Founder of Petani Kode",
+            "photo":"/images/Frame 13.png",
+            "linkedin": "",
+            "github": "",
+            "website": ""
+        },
+        {
+            "name": "Ahmad Habibi",
+            "jobTitle": "Golang Developer",
+            "photo":"/images/Frame 13.png",
+            "linkedin": "",
+            "github": "",
+            "website": ""
+        },
+        {
+            "name": "Hayi Nukman",
+            "jobTitle": "Flutter Developer",
+            "photo":"/images/Frame 13.png",
+            "linkedin": "",
+            "github": "",
+            "website": ""
+        },
+        {
+            "name": "Edwin Farid",
+            "jobTitle": "Fulstack Developer",
+            "photo":"/images/Frame 13.png",
+            "linkedin": "",
+            "github": "",
+            "website": ""
+        },
+        {
+            "name": "Rizqi Nino Firmansyah",
+            "jobTitle": "Coord. Lead UXiD Bandung",
+            "photo":"/images/Frame 13.png",
+            "linkedin": "",
+            "github": "",
+            "website": ""
+        }
+    ]
+}
