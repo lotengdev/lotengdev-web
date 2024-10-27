@@ -23,17 +23,43 @@ export default function Navbar() {
     return (
         <nav className="px-6 py-4 flex items-center shadow-md">
             <Brand url="/" />
-            <ul className="hidden lg:flex flex-grow pl-10 list-none">
+            <ul className="hidden lg:flex flex-grow justify-center list-none">
                 <li className="mr-8">
-                    <Link to="/">Home</Link>
+                    <Link 
+                        to="/" 
+                        className="transition-all duration-200 border-b-2 border-transparent hover:border-black hover:scale-105"
+                    >
+                        Home
+                    </Link>
                 </li>
-                <li className="mr-8"><Link to="/event">Acara</Link></li>
-                <li className="mr-8"><Link to="/speaker">Pembicara</Link></li>
-                <li className="mr-8"><Link to="/about">Tentang</Link></li>
+                <li className="mr-8">
+                    <Link 
+                        to="/event" 
+                        className="transition-all duration-200 border-b-2 border-transparent hover:border-black hover:scale-105"
+                    >
+                        Acara
+                    </Link>
+                </li>
+                <li className="mr-8">
+                    <Link 
+                        to="/speaker" 
+                        className="transition-all duration-200 border-b-2 border-transparent hover:border-black hover:scale-105"
+                    >
+                        Pembicara
+                    </Link>
+                </li>
+                <li className="mr-8">
+                    <Link 
+                        to="/about" 
+                        className="transition-all duration-200 border-b-2 border-transparent hover:border-black hover:scale-105"
+                    >
+                        Tentang
+                    </Link>
+                </li>
             </ul>
             <CTAButtons />
             <div className="lg:hidden flex flex-grow justify-end">
-                <img src={HamburgerIcon} />
+                <img src={HamburgerIcon} alt="Menu" />
             </div>
         </nav>
     )
