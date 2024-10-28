@@ -1,5 +1,6 @@
 import { Brand } from "./Brand";
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
 
 export function Sidenav({ handleCloseSidenav }) {
 
