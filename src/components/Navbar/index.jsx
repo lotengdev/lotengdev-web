@@ -44,11 +44,11 @@ export default function Navbar() {
 
                 {/* Mobile Menu */}
                 <div
-                    className={` justify-between fixed inset-y-0 right-0 w-64 bg-white shadow-lg transform transition-transform duration-300 ease-in-out z-50 ${isOpen ? 'translate-x-0' : 'translate-x-full'
+                    className={`py-6 flex flex-col justify-between fixed inset-y-0 right-0 w-64 bg-white shadow-lg transform transition-transform duration-300 ease-in-out z-50 ${isOpen ? 'translate-x-0' : 'translate-x-full'
                         }`}
                 >
 
-                    <ul className="flex flex-col pt-10 px-6">
+                    <ul className="flex flex-col px-6">
                         <div className="pb-7 justify-between flex lg:border-r border-solid border-grey">
                             <Brand to={'/'} onClick={toggleNavbar} />
                             <button onClick={toggleNavbar} className='text-xl'>&times;</button>
