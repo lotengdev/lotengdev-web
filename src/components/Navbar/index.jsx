@@ -74,8 +74,11 @@ export default function Navbar() {
                                 Tentang
                             </Link>
                         </li>
-
-
+                        <li className="my-4">
+                            <Link to="/contact" onClick={toggleNavbar} className="text-sm hover:text-blue-600">
+                                Kontak
+                            </Link>
+                        </li>
                     </ul>
 
                     <div className="  justify-center mt-20">
@@ -110,6 +113,9 @@ export default function Navbar() {
                 </li>
                 <li className="mr-8">
                     <Link to="/about" className="hover:text-blue-600">Tentang</Link>
+                </li>
+                <li className="mr-8">
+                    <Link to="/contact" className="hover:text-blue-600">Kontak</Link>
                 </li>
             </ul>
 
