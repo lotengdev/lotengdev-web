@@ -34,6 +34,38 @@ export default function Navbar() {
                 </li>
                 <li className="mr-4">
                     <Link to="/about" className="bg-white text-gray-800 px-4 py-2 rounded-full shadow hover:bg-blue-600 hover:text-white transition duration-300">Tentang</Link>
+            <ul className="hidden lg:flex flex-grow justify-center list-none">
+                <li className="mr-8">
+                    <Link 
+                        to="/" 
+                        className="transition-all duration-200 border-b-2 border-transparent hover:border-black hover:scale-105"
+                    >
+                        Home
+                    </Link>
+                </li>
+                <li className="mr-8">
+                    <Link 
+                        to="/event" 
+                        className="transition-all duration-200 border-b-2 border-transparent hover:border-black hover:scale-105"
+                    >
+                        Acara
+                    </Link>
+                </li>
+                <li className="mr-8">
+                    <Link 
+                        to="/speaker" 
+                        className="transition-all duration-200 border-b-2 border-transparent hover:border-black hover:scale-105"
+                    >
+                        Pembicara
+                    </Link>
+                </li>
+                <li className="mr-8">
+                    <Link 
+                        to="/about" 
+                        className="transition-all duration-200 border-b-2 border-transparent hover:border-black hover:scale-105"
+                    >
+                        Tentang
+                    </Link>
                 </li>
             </ul>
             <CTAButtons />
