@@ -1,17 +1,38 @@
 import LinkedinIcon from '@/assets/icons/linkedin.svg';
 import GithubIcon from '@/assets/icons/github.svg';
 import WebsiteIcon from '@/assets/icons/website.svg';
+import {Motion}  from "../framer-motion";// For Motion in Text
 
 export function SpeakerPage() {
     return (
         <div className="bg-[#F5F5F5] pt-14">
             <section className="text-center w-full">
-                <p className="text-[20px] font-bold text-[color:#41B883] ">
+                <Motion.p 
+                initial={{ opacity: 0, x: -100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                  duration: 0.8,
+                  type: "spring",
+                  stiffness: 110,
+                  delay: 0,
+                }}
+                className="text-[20px] font-bold text-[color:#41B883] ">
                     Semua Pembicara
-                </p>
-                <p className="text-[32px] font-bold mt-5">
+                </Motion.p>
+                <Motion.p 
+                initial={{ opacity: 0, x: -100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                  duration: 0.8,
+                  type: "spring",
+                  stiffness: 110,
+                  delay: 0,
+                }}
+                className="text-[32px] font-bold mt-5">
                     yang telah berbagi di <br/> acara Lotengdev
-                </p>
+                </Motion.p>
             </section>
             <section className="container mx-auto">
                 <div
@@ -24,7 +45,17 @@ export function SpeakerPage() {
                         { name: "Floyd Miles", imgSrc: "./images/Frame 23.png" },
                         { name: "Kathryn Murphy", imgSrc: "./images/Frame 24.png" },
                     ].map((speaker, index) => (
-                        <div className="flex items-center justify-center" key={index}>
+                        <Motion.div 
+                        initial={{ opacity: 0, x: -100 }}
+                     whileInView={{ opacity: 1, x: 0 }}
+                     viewport={{ once: true }}
+                     transition={{
+                       duration: 0.8,
+                       type: "spring",
+                       stiffness: 110,
+                       delay: 0,
+                     }}
+                        className="flex items-center justify-center" key={index}>
                             <div className="w-[260px] h-auto">
                                 <div className="w-[260px] h-[260px] rounded-[24px] overflow-hidden">
                                     <img
@@ -48,14 +79,24 @@ export function SpeakerPage() {
                                     </a>
                                 </div>
                             </div>
-                        </div>
+                        </Motion.div>
                     ))}
                 </div>
             </section>
             <section className="container pt-20 pb-20 mx-auto text-center">
-                <div className="text-[32px] font-bold">
+                <Motion.div 
+                initial={{ opacity: 0, x: -100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                  duration: 0.8,
+                  type: "spring",
+                  stiffness: 110,
+                  delay: 0,
+                }}
+                className="text-[32px] font-bold">
                     Tertarik menjadi pembicara di <br/> acara Lotengdev ?
-                </div>
+                </Motion.div>
                 <a href="https://github.com/Loteng-Dev/MeetupTopics/issues"
                     className="text-white bg-[#007BFF]  font-normal text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 mb-2 mt-[32px]">
                     + Kirim ide topik
