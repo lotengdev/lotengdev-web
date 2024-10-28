@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from "react";
+import  { useCallback, useEffect, useState } from "react";
 import styled from "styled-components";
 import { CgChevronDoubleUp } from "react-icons/cg";
 
@@ -58,11 +58,12 @@ const Wrapper = styled.div`
     z-index: 999;
     border-radius: 50%;
     box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.2);
-    background-color: blue;
+    background-color: #2563eb;
 
     .up-icon {
       font-size: 1.5rem;
       transition: transform 0.5s;
+      color: white;
       &:hover {
         transform: translateY(-2px);
       }
