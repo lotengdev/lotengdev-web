@@ -49,11 +49,11 @@ export default function Navbar() {
                 >
 
                     <ul className="flex flex-col pt-10 px-6">
-                        <div className="pb-7 justify-between flex pr-10 lg:border-r border-solid border-grey">
-
-                        <img width={90} src={LogtengDevLogo} />
-                            <p onClick={toggleNavbar} className='text-xl'>X</p>
+                        <div className="pb-7 justify-between flex lg:border-r border-solid border-grey">
+                            <Brand to={'/'} onClick={toggleNavbar} />
+                            <button onClick={toggleNavbar} className='text-xl'>&times;</button>
                         </div>
+                        
                         <li className="my-4">
                             <Link to="/" onClick={toggleNavbar} className="text-sm hover:text-blue-600">
                                 Home
@@ -81,11 +81,11 @@ export default function Navbar() {
                         </li>
                     </ul>
 
-                    <div className="  justify-center mt-20">
-                        <a href="https://t.me/lotengdev" target="_blank" rel="noopener noreferrer" className="flex items-center bg-blue-600 px-4 py-3 mr-4 mx-7 my-9 rounded text-xs text-white">
+                    <div className="px-6 flex gap-4 flex-col justify-center mt-20">
+                        <a href="https://t.me/lotengdev" target="_blank" rel="noopener noreferrer" className="inline-flex items-center bg-blue-600 px-4 py-3 rounded text-xs text-white">
                             <img className="inline mr-3" width={21} onClick={toggleNavbar} src={TelegramIcon} alt="Telegram Icon" />Join Group
                         </a>
-                        <a href="https://github.com/lotengdev/lotengdev-web/" target="_blank" rel="noopener noreferrer" className="flex items-center mx-7 my-9 text-xs  bg-neutral-100 border border-solid border-grey px-4 py-2 rounded">
+                        <a href="https://github.com/lotengdev/lotengdev-web/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-xs  bg-neutral-100 border border-solid border-grey px-4 py-2 rounded">
                             <img className="inline mr-3" width={21} onClick={toggleNavbar} src={GithubIcon} alt="GitHub Icon" />Contribute
                         </a>
                     </div>

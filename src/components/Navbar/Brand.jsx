@@ -21,7 +21,6 @@ export function Brand({ url, onClick }) {
   }, []);
 
   return (
-    <div className="pr-10 lg:border-r border-solid border-grey">
       <Link to={url} onClick={onClick}>
         <img
           className="h-7 lg:h-11"
@@ -29,7 +28,6 @@ export function Brand({ url, onClick }) {
           alt="LogtengDev Logo"
         />
       </Link>
-    </div>
   );
 }
 
