@@ -131,6 +131,10 @@ export default function Navbar() {
                 <li className="mr-8">
                     <Link to="/about" className="hover:text-blue-600">Tentang</Link>
                 </li>
+                <li className="mr-8"><Link to="/event">Acara</Link></li>
+                <li className="mr-8"><Link to="/speaker">Pembicara</Link></li>
+                <li className="mr-8"><Link to="/about">Tentang</Link></li>
+                <li className="mr-8"><Link to="/contact">Kontak</Link></li>
             </ul>
 
             <CTAButtons />

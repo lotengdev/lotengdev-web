@@ -8,6 +8,7 @@ import { EventPage } from './pages/event/index.jsx'
 import { HomePage } from './pages/home/index.jsx';
 import { SpeakerPage } from './pages/speaker/index.jsx';
 import { AboutPage } from './pages/about/index.jsx';
+import { ContactPage } from './pages/contact/index.jsx';
 import { Footer } from './components/Footer/index.jsx';
 import ScrollToTopButton from "./components/ScrollToTopButton";
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/event" element={<EventPage />} />
         <Route path="/speaker" element={<SpeakerPage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
       <ScrollToTopButton/>
       <Footer />
