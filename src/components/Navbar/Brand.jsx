@@ -4,7 +4,7 @@ import { useEffect, useState, useRef } from 'react';
 import LogtengDevLogoLight from '@/assets/lotengdev-logo-light.svg';
 import LogtengDevLogoDark from '@/assets/lotengdev-logo-dark.svg';
 
-export function Brand({ url }) {
+export function Brand({ url, onClick }) {
   const [isDarkBackground, setIsDarkBackground] = useState(false);
   const brandRef = useRef(null);
 
@@ -22,7 +22,7 @@ export function Brand({ url }) {
 
   return (
     <div className="pr-10 lg:border-r border-solid border-grey">
-      <Link to={url}>
+      <Link to={url} onClick={onClick}>
         <img
           className="h-7 lg:h-11"
           src={isDarkBackground ? LogtengDevLogoDark : LogtengDevLogoLight}
@@ -35,5 +35,6 @@ export function Brand({ url }) {
 
 Brand.propTypes = {
   url: PropTypes.string.isRequired,
+  onClick: PropTypes.func,
   isDarkBackground: PropTypes.bool
 };
