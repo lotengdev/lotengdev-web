@@ -11,6 +11,12 @@ import LogtengDevLogo from '@/assets/lotengdev-logo.svg';
 function CTAButtons() {
     return (
         <div className="hidden lg:flex justify-center">
+            <a href="https://t.me/lotengdev" target="_blank" className="flex items-center bg-blue-600 px-4 py-3 mr-4 rounded-full text-white shadow hover:bg-blue-700 transition duration-300">
+                <img className="inline mr-3" src={TelegramIcon} alt="Telegram" />Join Group
+            </a>
+            <a href="https://github.com/lotengdev/lotengdev-web/" target="_blank" className="flex items-center bg-neutral-100 border border-solid border-grey px-4 py-2 rounded-full shadow hover:bg-blue-600 hover:text-white transition duration-300">
+                <img className="inline mr-3" src={GithubIcon} alt="Github" />Contribute
+
             <a href="https://t.me/lotengdev" target="_blank" rel="noopener noreferrer" className="flex items-center bg-blue-600 px-4 py-3 mr-4 rounded text-white">
                 <img className="inline mr-3" src={TelegramIcon} alt="Telegram Icon" />Join Group
             </a>
@@ -31,6 +37,19 @@ export default function Navbar() {
     return (
         <nav className="px-6 py-4 flex items-center shadow-md relative">
             <Brand url="/" />
+            <ul className="hidden lg:flex flex-grow pl-10 list-none">
+                <li className="mr-4">
+                    <Link to="/" className="bg-white text-gray-800 px-4 py-2 rounded-full shadow hover:bg-blue-600 hover:text-white transition duration-300">Home</Link>
+                </li>
+                <li className="mr-4">
+                    <Link to="/event" className="bg-white text-gray-800 px-4 py-2 rounded-full shadow hover:bg-blue-600 hover:text-white transition duration-300">Acara</Link>
+                </li>
+                <li className="mr-4">
+                    <Link to="/speaker" className="bg-white text-gray-800 px-4 py-2 rounded-full shadow hover:bg-blue-600 hover:text-white transition duration-300">Pembicara</Link>
+                </li>
+                <li className="mr-4">
+                    <Link to="/about" className="bg-white text-gray-800 px-4 py-2 rounded-full shadow hover:bg-blue-600 hover:text-white transition duration-300">Tentang</Link>
+            <ul className="hidden lg:flex flex-grow justify-center list-none">
 
             {/* Navigation for small screens */}
             <div className="lg:hidden flex flex-grow justify-end items-center">
@@ -117,4 +136,5 @@ export default function Navbar() {
             <CTAButtons />
         </nav>
     );
+}
 }
