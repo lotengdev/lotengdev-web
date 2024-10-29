@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import {Motion}  from "../framer-motion";// For Motion in Text
+import { Motion } from "../framer-motion"; // For Motion in Text
 
-export function AboutPage() {
+export function AboutPage({ isDarkMode }) {
     return (
-        <div className="container mx-auto">
+        <div className={`container mx-auto ${isDarkMode ? 'bg-gray-900 text-white' : 'bg-white text-black'}`}>
             <div className="flex justify-center items-center w-full mt-6">
-                <div className="lg:w-[970px] w-[95%] rounded-3xl bg-white p-5 px-10">
+                <div className="lg:w-[970px] w-[95%] rounded-3xl p-5 px-10">
                     <div className="text-[color:#41B883] md:mt-16 mt-5 flex item-center gap-x-1">
                         <Link to="/">
                             Home  
@@ -50,5 +50,5 @@ export function AboutPage() {
                 </div>
             </div>
         </div>
-    )
+    );
 }

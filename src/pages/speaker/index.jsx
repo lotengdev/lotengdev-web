@@ -1,42 +1,48 @@
+import React from 'react';
 import LinkedinIcon from '@/assets/icons/linkedin.svg';
 import GithubIcon from '@/assets/icons/github.svg';
 import WebsiteIcon from '@/assets/icons/website.svg';
-import {Motion}  from "../framer-motion";// For Motion in Text
+import { Motion } from "../framer-motion";
 
-export function SpeakerPage() {
+export function SpeakerPage({ isDarkMode }) {
+    // Styles for dark mode
+    const pageStyle = isDarkMode ? 'bg-[#121212] text-white' : 'bg-[#F5F5F5] text-black';
+    const iconStyle = isDarkMode ? 'filter brightness-0 invert' : ''; // Ensure icons are visible in dark mode
+
     return (
-        <div className="bg-[#F5F5F5] pt-14">
+        <div className={`pt-14 ${pageStyle}`}>
             <section className="text-center w-full">
                 <Motion.p 
-                initial={{ opacity: 0, x: -100 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{
-                  duration: 0.8,
-                  type: "spring",
-                  stiffness: 110,
-                  delay: 0,
-                }}
-                className="text-[20px] font-bold text-[color:#41B883] ">
+                    initial={{ opacity: 0, x: -100 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{
+                        duration: 0.8,
+                        type: "spring",
+                        stiffness: 110,
+                        delay: 0,
+                    }}
+                    className="text-[20px] font-bold text-[color:#41B883]"
+                >
                     Semua Pembicara
                 </Motion.p>
                 <Motion.p 
-                initial={{ opacity: 0, x: -100 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{
-                  duration: 0.8,
-                  type: "spring",
-                  stiffness: 110,
-                  delay: 0,
-                }}
-                className="text-[32px] font-bold mt-5">
-                    yang telah berbagi di <br/> acara Lotengdev
+                    initial={{ opacity: 0, x: -100 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{
+                        duration: 0.8,
+                        type: "spring",
+                        stiffness: 110,
+                        delay: 0,
+                    }}
+                    className="text-[32px] font-bold mt-5"
+                >
+                    yang telah berbagi di <br /> acara Lotengdev
                 </Motion.p>
             </section>
             <section className="container mx-auto">
-                <div
-                    className="w-full lg:h-screen h-auto grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 gap-y-4 content-around">
+                <div className="w-full lg:h-screen h-auto grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 gap-y-4 content-around">
                     {[
                         { name: "Jenny Wilson", imgSrc: "./images/Frame 13.png" },
                         { name: "Esther Howard", imgSrc: "./images/Frame 14.png" },
@@ -46,16 +52,18 @@ export function SpeakerPage() {
                         { name: "Kathryn Murphy", imgSrc: "./images/Frame 24.png" },
                     ].map((speaker, index) => (
                         <Motion.div 
-                        initial={{ opacity: 0, x: -100 }}
-                     whileInView={{ opacity: 1, x: 0 }}
-                     viewport={{ once: true }}
-                     transition={{
-                       duration: 0.8,
-                       type: "spring",
-                       stiffness: 110,
-                       delay: 0,
-                     }}
-                        className="flex items-center justify-center" key={index}>
+                            initial={{ opacity: 0, x: -100 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            transition={{
+                                duration: 0.8,
+                                type: "spring",
+                                stiffness: 110,
+                                delay: 0,
+                            }}
+                            className="flex items-center justify-center" 
+                            key={index}
+                        >
                             <div className="w-[260px] h-auto">
                                 <div className="w-[260px] h-[260px] rounded-[24px] overflow-hidden">
                                     <img
@@ -69,13 +77,13 @@ export function SpeakerPage() {
                                 </div>
                                 <div className="w-full flex md:justify-start justify-center md:items-start items-center">
                                     <a href="#">
-                                        <img className="w-[23px] h-[23px] mr-2" src={LinkedinIcon} alt="icon_linkedin"/>
+                                        <img className={`w-[23px] h-[23px] mr-2 ${iconStyle}`} src={LinkedinIcon} alt="icon_linkedin" />
                                     </a>
                                     <a href="#">
-                                        <img className="w-[23px] h-[23px] mr-2" src={GithubIcon} alt="icon_github"/>
+                                        <img className={`w-[23px] h-[23px] mr-2 ${iconStyle}`} src={GithubIcon} alt="icon_github" />
                                     </a>
                                     <a href="#">
-                                        <img className="w-[23px] h-[23px]" src={WebsiteIcon} alt="icon_website"/>
+                                        <img className={`w-[23px] h-[23px] ${iconStyle}`} src={WebsiteIcon} alt="icon_website" />
                                     </a>
                                 </div>
                             </div>
@@ -85,23 +93,25 @@ export function SpeakerPage() {
             </section>
             <section className="container pt-20 pb-20 mx-auto text-center">
                 <Motion.div 
-                initial={{ opacity: 0, x: -100 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{
-                  duration: 0.8,
-                  type: "spring",
-                  stiffness: 110,
-                  delay: 0,
-                }}
-                className="text-[32px] font-bold">
-                    Tertarik menjadi pembicara di <br/> acara Lotengdev ?
+                    initial={{ opacity: 0, x: -100 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{
+                        duration: 0.8,
+                        type: "spring",
+                        stiffness: 110,
+                        delay: 0,
+                    }}
+                    className="text-[32px] font-bold"
+                >
+                    Tertarik menjadi pembicara di <br /> acara Lotengdev ?
                 </Motion.div>
                 <a href="https://github.com/Loteng-Dev/MeetupTopics/issues"
-                    className="text-white bg-[#007BFF]  font-normal text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 mb-2 mt-[32px]">
+                    className="text-white bg-[#007BFF] font-normal text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 mb-2 mt-[32px]"
+                >
                     + Kirim ide topik
                 </a>
             </section>
         </div>
-    )
+    );
 }

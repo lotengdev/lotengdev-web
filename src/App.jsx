@@ -1,34 +1,48 @@
-import { useState } from 'react'
-import './App.css'
-import { Routes, Route, Outlet, Link } from "react-router-dom";
+import { useState, useEffect } from 'react';
+import './App.css';
+import { Routes, Route } from "react-router-dom";
 
-// Compontents
-import Navbar from './components/Navbar'
-import { EventPage } from './pages/event/index.jsx'
+// Components
+import Navbar from './components/Navbar';
+import { EventPage } from './pages/event/index.jsx';
 import { HomePage } from './pages/home/index.jsx';
 import { SpeakerPage } from './pages/speaker/index.jsx';
 import { AboutPage } from './pages/about/index.jsx';
 import { ContactPage } from './pages/contact/index.jsx';
-import { Footer } from './components/Footer/index.jsx';
+import { Footer } from './components/Footer';
 import ScrollToTopButton from "./components/ScrollToTopButton";
 
 function App() {
-  // const [count, setCount] = useState(0)
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    return localStorage.getItem("darkMode") === "true";
+  });
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(prevMode => {
+      localStorage.setItem("darkMode", !prevMode);
+      return !prevMode;
+    });
+  };
+
+  useEffect(() => {
+    // Apply dark class to body based on isDarkMode state
+    document.body.classList.toggle('dark', isDarkMode);
+  }, [isDarkMode]);
 
   return (
-    <>
-      <Navbar />
+    <div>
+      <Navbar darkMode={isDarkMode} toggleTheme={toggleDarkMode} />
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/event" element={<EventPage />} />
-        <Route path="/speaker" element={<SpeakerPage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/" element={<HomePage isDarkMode={isDarkMode} />} />
+        <Route path="/event" element={<EventPage isDarkMode={isDarkMode} />} />
+        <Route path="/speaker" element={<SpeakerPage isDarkMode={isDarkMode} />} />
+        <Route path="/about" element={<AboutPage isDarkMode={isDarkMode} />} />
+        <Route path="/contact" element={<ContactPage isDarkMode={isDarkMode} />} />
       </Routes>
-      <ScrollToTopButton/>
-      <Footer />
-    </>
-  )
+      <Footer isDarkMode={isDarkMode} />
+      <ScrollToTopButton />
+    </div>
+  );
 }
 
-export default App
+export default App;

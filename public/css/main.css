@@ -1398,3 +1398,131 @@ html {
     line-height: 62px;
   }
 }
+/* styles.css */
+body.dark-mode {
+  background-color: #333; /* Background for dark mode */
+  color: #fff; /* Text color for dark mode */
+}
+
+/* Additional dark mode styles can be added here */
+/* Additional styling for the toggle switch */
+.dot {
+  transition: transform 0.2s;
+}
+
+/* Styling for dark mode and light mode */
+body.dark {
+  background-color: #1a202c; /* Dark background */
+  color: white; /* Light text color */
+}
+
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar {
+  transition: background-color 0.3s, color 0.3s;
+}
+/* Add dark mode styles if not already defined */
+body.dark {
+  background-color: #1a202c; /* Dark background */
+  color: white; /* Light text */
+}
+body {
+  background-color: white;
+  color: black;
+}
+
+
+/* Dark Mode Styles */
+body.dark {
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* Light text */
+}
+
+.navbar.dark {
+  background-color: #1e1e1e; /* Navbar dark */
+  color: #ffffff; /* Navbar text dark */
+}
+
+/* Style other components */
+.card {
+  background-color: #f8f8f8; /* Light card background */
+}
+
+body.dark .card {
+  background-color: #1e1e1e; /* Dark card background */
+}
+.homepage.dark {
+  background-color: #1e1e1e; /* Dark background for homepage */
+}
+
+
+/* Add other dark mode styles as needed */
+/* App.css or your styles file */
+
+/* Button styles */
+.flex a {
+  transition: background-color 0.3s ease;
+}
+
+/* Dark mode styles for buttons */
+body.dark-mode .flex a {
+  background-color: #3a3a3a; /* Dark button background */
+  color: #f5f5f5; /* Light text color for dark mode */
+  border-color: #666; /* Optional: darker border for dark mode */
+}
+
+body.dark-mode .flex a:hover {
+  background-color: #555; /* Darker on hover */
+}
+/* App.css or your styles file */
+
+body.dark-mode {
+  background-color: #1a1a1a; /* Dark background for body */
+  color: white; /* Light text color for body */
+}
+
+/* Dark mode styles for buttons, links, etc. */
+a {
+  transition: color 0.3s ease;
+}
+
+body.dark-mode a {
+  color: #9f9f9f; /* Change link color in dark mode */
+}
+
+body.dark-mode .bg-gray-800 {
+  background-color: #2d2d2d !important; /* Example for dark background */
+}
+
+body.dark-mode .bg-neutral-100 {
+  background-color: #444 !important; /* Change for dark mode */
+}
+/* Add this to your main CSS file */
+body.dark {
+  background-color: #121212; /* Dark background */
+  color: white; /* Light text */
+}
+
+.container {
+  background-color: #1e1e1e; /* Darker container background */
+}
+
+/* Adjust input styles for dark mode */
+input, textarea {
+  background-color: #333; /* Darker input background */
+  color: white; /* Light text in inputs */
+  border: 1px solid #555; /* Darker border */
+}
+
+/* Adjust button styles for dark mode */
+button {
+  background-color: #007BFF; /* Button color */
+  color: white; /* Button text color */
+}
+/* In your CSS file */
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}

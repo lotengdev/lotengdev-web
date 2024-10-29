@@ -1,0 +1,135 @@
+/* App.css */
+
+/* Default light mode styles */
+body {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  /* Dark mode styles */
+  body.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+  }
+  
+  /* Additional styles for the home page */
+  .app-container.light {
+    background-color: #ffffff; /* Light mode background */
+    color: #000000; /* Light mode text color */
+  }
+  
+  .app-container.dark {
+    background-color: #444444; /* Dark mode background */
+    color: #ffffff; /* Dark mode text color */
+  }
+  /* App.css */
+
+/* Light Mode (default) */
+body {
+  background-color: white;
+  color: black;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212; /* Darker background */
+  color: #f5f5f5; /* Lighter text */
+}
+
+/* Navbar styles in dark mode */
+body.dark-mode .navbar {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+/* Additional dark mode styling for specific components */
+body.dark-mode .home-page,
+body.dark-mode .event-page,
+body.dark-mode .speaker-page,
+body.dark-mode .about-page,
+body.dark-mode .contact-page {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+/* App.css */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Additional dark mode styles for other elements */
+.dark-mode .your-class {
+  background-color: #333333;
+  /* other styles */
+}
+/* App.css */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Optional: Style dark mode for other elements */
+.dark-mode .your-element-class {
+  background-color: #333333;
+  /* Add more styles for dark mode */
+}
+body.dark {
+  background-color: #1F1F1F; /* Dark mode background */
+  color: white; /* Light text for dark mode */
+}
+
+body {
+  background-color: #F5F5F5; /* Light mode background */
+  color: black; /* Dark text for light mode */
+}
+
+/* Add more styles as needed for dark mode */
+
+body.dark {
+  background-color: #121212; /* Dark background */
+  color: white; /* Light text */
+}
+
+.navbar {
+  background-color: #1e1e1e; /* Dark navbar */
+}
+
+.footer {
+  background-color: #1e1e1e; /* Dark footer */
+}
+
+.event-page {
+  background-color: white; /* Light background for event page */
+}
+
+.event-page.dark {
+  background-color: #121212; /* Dark background for event page in dark mode */
+}
+
+/* Add similar classes for other components as necessary */
+/* In your CSS file */
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+body {
+  background-color: #F5F5F5; /* Light mode background */
+  color: #333; /* Light mode text color */
+  transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transition */
+}
+
+body.dark {
+  background-color: #121212; /* Dark mode background */
+  color: #FFF; /* Dark mode text color */
+}
+
+/* Additional styles for components in dark mode */
+.dark .navbar {
+  background-color: #333; /* Navbar background in dark mode */
+}
+
+.dark .footer {
+  background-color: #333; /* Footer background in dark mode */
+}
+
+/* Add more styles as necessary for your components */
