@@ -14,3 +14,10 @@
     font-family: Poppins, system-ui, sans-serif;
   }
 }
+body {
+  transition: background-color 0.5s, color 0.5s;
+}
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
