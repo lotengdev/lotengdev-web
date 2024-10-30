@@ -46,10 +46,10 @@ export function ContactPage() {
                 <span>Contact Loteng Dev</span>
                 <div className="flex ml-3">
                 <a href="https://mail.google.com/mail/?view=cm&fs=1&to=lotengdev@gmail.com" target="_blank" rel="noopener noreferrer" className="ml-2">
-                    <img src={emailIcon} alt="Email Icon" className="w-6 h-6" />
+                    <img src={emailIcon} alt="Email Icon" className="w-6 h-6 transform hover:scale-110  transition-transform duration-200 " />
                 </a>
                 <a href="https://t.me/lotengdev" target="_blank" rel="noopener noreferrer" className="ml-2">
-                    <img src={telegramIcon} alt="Telegram Icon" className="w-6 h-6" />
+                    <img src={telegramIcon} alt="Telegram Icon" className="w-6 h-6 transform hover:scale-110  transition-transform duration-200" />
                 </a>
             </div>
             </div>
@@ -77,7 +77,7 @@ export function ContactPage() {
             ></textarea>
             <button
                 type="submit"
-                className="bg-[color:#41B883] text-white font-bold py-2 px-6 rounded-lg text-lg"
+                className="bg-[color:#41B883] text-white font-bold py-2 px-6 rbg-blue-500 rounded transition-all duration-300 ease-in-out transform hover:bg-green-600 hover:scale-105 "
             >
                 Send Email
             </button>

@@ -69,13 +69,13 @@ export function SpeakerPage() {
                                 </div>
                                 <div className="w-full flex md:justify-start justify-center md:items-start items-center">
                                     <a href="#">
-                                        <img className="w-[23px] h-[23px] mr-2" src={LinkedinIcon} alt="icon_linkedin"/>
+                                        <img className="w-[23px] h-[23px] mr-2 transition-all duration-300 ease-in-out transform hover:scale-110" src={LinkedinIcon} alt="icon_linkedin"/>
                                     </a>
                                     <a href="#">
-                                        <img className="w-[23px] h-[23px] mr-2" src={GithubIcon} alt="icon_github"/>
+                                        <img className="w-[23px] h-[23px] mr-2 transition-all duration-300 ease-in-out transform hover:scale-110" src={GithubIcon} alt="icon_github"/>
                                     </a>
                                     <a href="#">
-                                        <img className="w-[23px] h-[23px]" src={WebsiteIcon} alt="icon_website"/>
+                                        <img className="w-[23px] h-[23px] transition-all duration-300 ease-in-out transform hover:scale-110" src={WebsiteIcon} alt="icon_website"/>
                                     </a>
                                 </div>
                             </div>
@@ -98,7 +98,7 @@ export function SpeakerPage() {
                     Tertarik menjadi pembicara di <br/> acara Lotengdev ?
                 </Motion.div>
                 <a href="https://github.com/Loteng-Dev/MeetupTopics/issues"
-                    className="text-white bg-[#007BFF]  font-normal text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 mb-2 mt-[32px]">
+                    className="text-white   font-normal text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 mb-2 mt-[32px] rounded-md bg-blue-500 transition-all duration-300 ease-in-out transform hover:bg-blue-700 hover:shadow-lg">
                     + Kirim ide topik
                 </a>
             </section>

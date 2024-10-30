@@ -11,10 +11,10 @@ import LogtengDevLogo from '@/assets/lotengdev-logo.svg';
 function CTAButtons() {
     return (
         <div className="hidden lg:flex justify-center">
-            <a href="https://t.me/lotengdev" target="_blank" rel="noopener noreferrer" className="flex items-center bg-blue-600 px-4 py-3 mr-4 rounded text-white">
-                <img className="inline mr-3" src={TelegramIcon} alt="Telegram Icon" />Join Group
+            <a href="https://t.me/lotengdev" target="_blank" rel="noopener noreferrer" className="flex items-center bg-blue-600 px-4 py-3 mr-4 rounded text-white  transform hover:scale-105  transition-transform duration-200  ">
+                <img className="inline mr-3" src={TelegramIcon} alt="Telegram Icon " />Join Group
             </a>
-            <a href="https://github.com/lotengdev/lotengdev-web/" target="_blank" rel="noopener noreferrer" className="flex items-center bg-neutral-100 border border-solid border-grey px-4 py-2 rounded">
+            <a href="https://github.com/lotengdev/lotengdev-web/" target="_blank" rel="noopener noreferrer" className="flex items-center bg-neutral-100 border border-solid border-grey px-4 py-2 rounded transform hover:scale-105  transition-transform duration-200 ">
                 <img className="inline mr-3" src={GithubIcon} alt="GitHub Icon" />Contribute
             </a>
         </div>
@@ -82,8 +82,8 @@ export default function Navbar() {
                     </ul>
 
                     <div className="px-6 flex gap-4 flex-col justify-center mt-20">
-                        <a href="https://t.me/lotengdev" target="_blank" rel="noopener noreferrer" className="inline-flex items-center bg-blue-600 px-4 py-3 rounded text-xs text-white">
-                            <img className="inline mr-3" width={21} onClick={toggleNavbar} src={TelegramIcon} alt="Telegram Icon" />Join Group
+                        <a href="https://t.me/lotengdev" target="_blank" rel="noopener noreferrer" className="inline-flex items-center bg-blue-600 px-4 py-3 rounded text-xs text-white ">
+                            <img className="inline mr-3" width={21} onClick={toggleNavbar} src={TelegramIcon} alt="Telegram Icon " />Join Group
                         </a>
                         <a href="https://github.com/lotengdev/lotengdev-web/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-xs  bg-neutral-100 border border-solid border-grey px-4 py-2 rounded">
                             <img className="inline mr-3" width={21} onClick={toggleNavbar} src={GithubIcon} alt="GitHub Icon" />Contribute
