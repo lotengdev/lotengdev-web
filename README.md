@@ -8,17 +8,19 @@
 - [x] Speaker List Page for those who have contributed to events
 - [x] About Page containing information about the community
 
-### 📜 How to Contribute
+## 📜 How to Contribute
+
+### 1. Feature Requests
 
 1. View the design in Figma: [Figma Link](https://www.figma.com/file/axXbAb5zBrfxLaJSo5MHrQ/Loteng-Dev-Design-Assets?node-id=108%3A10664)
 2. Check the [Issues](https://github.com/Loteng-Dev/lotengdev-web/issues) to choose a task you’d like to work on
 3. Submit a pull request to this repository
 
-## ⚙ How to Contribute
-
-### 1. Feature Requests
+#### 📬 Have suggestions, ideas, or questions?
 
 We love hearing your ideas! If you have a feature request, please create a new issue and describe the feature you would like to see, including its potential benefits.
+
+Submit them by [opening a new issue](https://github.com/Loteng-Dev/lotengdev-web/issues/new) or join the Lotengdev Telegram Group.
 
 ### 2. Contributing Code
 
@@ -80,11 +82,6 @@ git push origin my-feature-branch
 ### 7. Waiting for Review
 
 _A project maintainer will review your pull request. Be open to feedback, and feel free to ask questions or discuss any requested changes._
-
-## 📬 Have suggestions, ideas, or questions?
-
-Submit them by [opening a new issue](https://github.com/Loteng-Dev/lotengdev-web/issues/new)  
-or join the Lotengdev Telegram Group.
 
 ## 🧰 Development
 
