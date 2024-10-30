@@ -21,19 +21,19 @@ export function Footer() {
                 </li>
                 <li>
                     <a href="https://www.instagram.com/lotengdev/" target="_blank" rel="noopener noreferrer">
-                        <img 
+                        <img className="transform hover:scale-110 transition-transform duration-200"
                             src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" 
                             alt="Instagram Logo"  
-                            style={{ display: 'inline-block', gap: '15px', width: '40px', height: '40px' }}
+                            style={{ display: 'inline-block', gap: '18px', width: '30px', height: '28px', }}
                         />
                     </a>
                 </li>
                 <li>
                     <a href="https://www.youtube.com/@lotengdev4516" target="_blank" rel="noopener noreferrer">
-                        <img 
+                        <img className="transform hover:scale-110 transition-transform duration-200"
                             src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" 
                             alt="YouTube Logo" 
-                            style={{ display: 'inline-block', gap: '15px', width: '40px', height: '40px', paddingLeft: '4px' }}
+                            style={{ display: 'inline-block', gap: '18px', width: '40px', height: '28px', paddingLeft: '4px',marginLeft:'2px' }}
                         />
                     </a>
                 </li>

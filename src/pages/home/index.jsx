@@ -37,10 +37,10 @@ export function HomePage() {
                             Programming, dan masih banyak lagi. </span>
                     </div>
                     <div className="flex">
-                        <a href="https://t.me/lotengdev" target='_blank' className="flex items-center bg-blue-600 px-4 py-3 mr-4 rounded text-white text-[12px]">
-                            <img className="inline mr-3 lg:w-auto lg:h-auto h-[12px] w-[12px]" src={TelegramIcon} />Join Group
+                        <a href="https://t.me/lotengdev" target='_blank' className="flex items-center bg-blue-600 px-4 py-3 mr-4 rounded text-white text-[12px] transform hover:scale-105  transition-transform duration-200 ">
+                            <img className="inline mr-3 lg:w-auto lg:h-auto h-[12px] w-[12px] " src={TelegramIcon} />Join Group
                         </a>
-                        <a href="https://github.com/lotengdev/lotengdev-web/" target='_blank' className="flex items-center bg-neutral-100 border border-solid border-grey px-4 py-2 rounded">
+                        <a href="https://github.com/lotengdev/lotengdev-web/" target='_blank' className="flex items-center bg-neutral-100 border border-solid border-grey px-4 py-2 rounded transform hover:scale-105  transition-transform duration-200 ">
                             <img className="inline mr-3 lg:w-auto lg:h-auto h-[12px] w-[12px]" src={GithubIcon} />Contribute
                         </a>
                     </div>

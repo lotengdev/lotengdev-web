@@ -267,7 +267,7 @@ export function EventPage() {
                     Next meetup kita mau bahas <br /> apa nih?
                 </Motion.div>
                 <a href="https://github.com/Loteng-Dev/MeetupTopics/issues "
-                    className="text-white bg-[#007BFF] font-normal text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 mb-2 mt-[32px] ">
+                    className="text-white   font-normal text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 mb-2 mt-[32px] rounded-md bg-blue-500 transition-all duration-300 ease-in-out transform hover:bg-blue-700 hover:shadow-lg">
                     + Kirim ide topik
                 </a>
             </section>
