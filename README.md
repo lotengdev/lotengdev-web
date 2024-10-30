@@ -16,10 +16,9 @@
 2. Check the [Issues](https://github.com/Loteng-Dev/lotengdev-web/issues) to choose a task you’d like to work on
 3. Submit a pull request to this repository
 
-
 # 🧰 Development
 
-Install all depedencies
+Install all dependencies
 
 ```bash
 pnpm i
@@ -33,13 +32,14 @@ pnpm dev
 
 # 🚀 Deployment
 
-The website will automaticly deployed to Github Pages using the Github Action.
-The deployment triggered by new commits on `main` branch.
+The website will be automatically deployed to Github Pages using the Github Action.
 
+Deployment is triggered by new commits on `main` branch.
 
 # ⚙ How to Contribute
 
 ### 1. Feature Requests
+
 We love hearing your ideas! If you have a feature request, please create a new issue and describe the feature you would like to see, including its potential benefits.
 
 ### 2. Contributing Code
@@ -51,11 +51,13 @@ If you'd like to contribute code, please follow these steps:
 1. Click the "Fork" button in the upper right corner of the repository.
 
 2. Clone your forked repository to your local machine:
+
 ```bash
    git clone https://github.com/yourusername/lotengdev-web.git
 ```
 
 ### Create a New Branch
+
 1. **Create a new branch for your feature or bug fix:**
 
 ```bash
@@ -71,35 +73,37 @@ git checkout -b my-feature-branch
 ### Commit Your Changes
 
 1. **Stage your changes:**
+
 ```bash
 git add .
 ```
 
-2. *Commit your changes with a descriptive message:*
+2. _Commit your changes with a descriptive message:_
+
 ```bash
 git commit -m "Add feature: [brief description]"
 ```
 
 ### Push to Your Fork
 
-*Push your changes to your forked repository:*
+_Push your changes to your forked repository:_
+
 ```bash
 git push origin my-feature-branch
 ```
 
 ## Create a Pull Request
-1. *Go to the original repository and click on "Pull Requests."*
-2. *Click "New Pull Request."*
-3. *Select your branch and provide a description of your changes.*
-4. *Click "Create Pull Request."*
 
-## Waiting for Review 
-*A project maintainer will review your pull request. Be open to feedback, and feel free to ask questions or discuss any requested changes.*
----
+1. _Go to the original repository and click on "Pull Requests."_
+2. _Click "New Pull Request."_
+3. _Select your branch and provide a description of your changes._
+4. _Click "Create Pull Request."_
 
+## Waiting for Review
+
+## _A project maintainer will review your pull request. Be open to feedback, and feel free to ask questions or discuss any requested changes._
 
 # 📬 Have suggestions, ideas, or questions?
 
 Submit them by [opening a new issue](https://github.com/Loteng-Dev/lotengdev-web/issues/new)  
 or join the Lotengdev Telegram Group.
-
