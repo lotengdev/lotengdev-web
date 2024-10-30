@@ -2,9 +2,7 @@
 
 ![Lotengdev web](https://user-images.githubusercontent.com/4420029/197935411-17fd5aed-a9a3-49ef-81ee-612da5181d3f.png)
 
-# Lombok Tengah Developer Website
-
-### Feature/Page List:
+## Feature/Page List:
 
 - [x] Event List Page for past and upcoming events
 - [x] Speaker List Page for those who have contributed to events
@@ -16,7 +14,7 @@
 2. Check the [Issues](https://github.com/Loteng-Dev/lotengdev-web/issues) to choose a task you’d like to work on
 3. Submit a pull request to this repository
 
-# ⚙ How to Contribute
+## ⚙ How to Contribute
 
 ### 1. Feature Requests
 
@@ -36,7 +34,7 @@ If you'd like to contribute code, please follow these steps:
    git clone https://github.com/yourusername/lotengdev-web.git
 ```
 
-### Create a New Branch
+### 3. Create a New Branch
 
 1. **Create a new branch for your feature or bug fix:**
 
@@ -50,7 +48,7 @@ git checkout -b my-feature-branch
 2. **Ensure your code follows the project's coding style and conventions.**
 3. **Add tests for any new features or changes to existing functionality.**
 
-### Commit Your Changes
+### 4. Commit Your Changes
 
 1. **Stage your changes:**
 
@@ -64,7 +62,7 @@ git add .
 git commit -m "Add feature: [brief description]"
 ```
 
-### Push to Your Fork
+### 5. Push to Your Fork
 
 _Push your changes to your forked repository:_
 
@@ -72,23 +70,23 @@ _Push your changes to your forked repository:_
 git push origin my-feature-branch
 ```
 
-## Create a Pull Request
+### 6. Create a Pull Request
 
 1. _Go to the original repository and click on "Pull Requests."_
 2. _Click "New Pull Request."_
 3. _Select your branch and provide a description of your changes._
 4. _Click "Create Pull Request."_
 
-## Waiting for Review
+### 7. Waiting for Review
 
-## _A project maintainer will review your pull request. Be open to feedback, and feel free to ask questions or discuss any requested changes._
+_A project maintainer will review your pull request. Be open to feedback, and feel free to ask questions or discuss any requested changes._
 
-# 📬 Have suggestions, ideas, or questions?
+## 📬 Have suggestions, ideas, or questions?
 
 Submit them by [opening a new issue](https://github.com/Loteng-Dev/lotengdev-web/issues/new)  
 or join the Lotengdev Telegram Group.
 
-# 🧰 Development
+## 🧰 Development
 
 Install all dependencies
 
@@ -102,7 +100,7 @@ Run the dev server:
 pnpm dev
 ```
 
-# 🚀 Deployment
+## 🚀 Deployment
 
 The website will be automatically deployed to Github Pages using the Github Action.
 
