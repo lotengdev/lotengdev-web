@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import TelegramIcon from '@/assets/icons/telegram.svg';
 import GithubIcon from '@/assets/icons/github.svg';
+import { EventPage } from '../../components/Event';
 
 export function HomePage() {
     const [text, setText] = useState('');
@@ -22,8 +23,8 @@ export function HomePage() {
     }, []);
 
     return (
-        <div className="flex justify-center items-center h-[80vh]" id="home">
-            <div className="lg:flex justify-center p-[32px]">
+        <div className="flex flex-col justify-center items-center h-auto" id="home">
+            <div className="lg:flex justify-center p-[32px] h-[90vh] items-center">
                 <img src="./images/rafiki.png" className="lg:w-[30%] lg:h-[30%]" />
                 <div className="lg:w-[50%] lg:mt-0 mt-[25px]">
                     <div className="lg:mb-[16px] mb-[14px]">
@@ -46,6 +47,7 @@ export function HomePage() {
                     </div>
                 </div>
             </div>
+            <EventPage />
         </div>
     );
 }
