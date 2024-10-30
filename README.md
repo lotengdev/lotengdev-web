@@ -1,4 +1,4 @@
-# Lotengdev website
+# Lombok Tengah Developer Website
 
 ![Lotengdev web](https://user-images.githubusercontent.com/4420029/197935411-17fd5aed-a9a3-49ef-81ee-612da5181d3f.png)
 
@@ -15,26 +15,6 @@
 1. View the design in Figma: [Figma Link](https://www.figma.com/file/axXbAb5zBrfxLaJSo5MHrQ/Loteng-Dev-Design-Assets?node-id=108%3A10664)
 2. Check the [Issues](https://github.com/Loteng-Dev/lotengdev-web/issues) to choose a task you’d like to work on
 3. Submit a pull request to this repository
-
-# 🧰 Development
-
-Install all dependencies
-
-```bash
-pnpm i
-```
-
-Run the dev server:
-
-```bash
-pnpm dev
-```
-
-# 🚀 Deployment
-
-The website will be automatically deployed to Github Pages using the Github Action.
-
-Deployment is triggered by new commits on `main` branch.
 
 # ⚙ How to Contribute
 
@@ -107,3 +87,23 @@ git push origin my-feature-branch
 
 Submit them by [opening a new issue](https://github.com/Loteng-Dev/lotengdev-web/issues/new)  
 or join the Lotengdev Telegram Group.
+
+# 🧰 Development
+
+Install all dependencies
+
+```bash
+pnpm i
+```
+
+Run the dev server:
+
+```bash
+pnpm dev
+```
+
+# 🚀 Deployment
+
+The website will be automatically deployed to Github Pages using the Github Action.
+
+Deployment is triggered by new commits on `main` branch.
