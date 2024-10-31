@@ -1,16 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Page Not Found</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .container {
+            text-align: center;
+            padding: 2rem;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        a {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            color: #fff;
+            background: #007bff;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        a:hover {
+            background: #0056b3;
+        }
+    </style>
     <script>
         sessionStorage.redirect = location.href;
     </script>
-    <meta http-equiv="refresh" content="0;URL='/'" />
+    <meta http-equiv="refresh" content="5;URL='/'" />
 </head>
-
-<body></body>
-
+<body>
+    <div class="container">
+        <h1>Oops!</h1>
+        <p>The page you are looking for does not exist. You will be redirected to the homepage shortly.</p>
+        <p>If you are not redirected, click the button below.</p>
+        <a href="/">Go to Homepage</a>
+    </div>
+</body>
 </html>
