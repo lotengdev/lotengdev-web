@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import TelegramIcon from "@/assets/icons/telegram.svg";
 import GithubIcon from "@/assets/icons/github.svg";
 import HamburgerIcon from '@/assets/icons/menu.svg';
-import LogtengDevLogo from '@/assets/lotengdev-logo.svg';
 
 
 function CTAButtons({ toggleTheme, darkMode }) {
