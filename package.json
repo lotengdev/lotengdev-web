@@ -37,5 +37,11 @@
   },
   "browserslist": [
     "defaults"
-  ]
+  ],
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@swc/core",
+      "esbuild"
+    ]
+  }
 }
