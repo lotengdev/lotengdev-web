@@ -128,6 +128,5 @@ dist-ssr
 *.sln
 *.sw?
 
-pnpm-lock.yaml
 .directory
 package-lock.json
