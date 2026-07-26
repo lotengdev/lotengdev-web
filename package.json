@@ -11,7 +11,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@emailjs/browser": "^4.4.1",
     "axios": "^1.7.7",
     "framer-motion": "^12.42.2",
     "prop-types": "^15.8.1",

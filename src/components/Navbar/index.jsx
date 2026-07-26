@@ -74,9 +74,6 @@ export default function Navbar({ darkMode, toggleTheme }) {
                         <li className="my-4">
                             <Link to="/about" onClick={toggleNavbar} className="text-sm hover:text-blue-600 text-black">Tentang</Link>
                         </li>
-                        <li className="my-4">
-                            <Link to="/contact" onClick={toggleNavbar} className="text-sm hover:text-blue-600 text-black">Kontak</Link>
-                        </li>
                     </ul>
 
                     <div className="px-6 flex gap-4 flex-col justify-center mt-20">
@@ -108,9 +105,6 @@ export default function Navbar({ darkMode, toggleTheme }) {
                 </li>
                 <li className="mr-8">
                     <Link to="/about" className="hover:text-blue-600">Tentang</Link>
-                </li>
-                <li className="mr-8">
-                    <Link to="/contact" className="hover:text-blue-600">Kontak</Link>
                 </li>
             </ul>
 

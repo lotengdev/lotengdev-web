@@ -19,8 +19,7 @@ Welcome to the **Lotengdev Web** codebase! This document provides comprehensive 
 - **Styling**: Tailwind CSS 3, PostCSS, Autoprefixer
 - **Animations**: Framer Motion
 - **Icons**: React Icons (`react-icons/fa6`)
-- **Routing**: React Router DOM (v6)
-- **Forms / Contact**: EmailJS (`@emailjs/browser`)
+- **Routing**: React Router DOM (v7)
 - **Package Manager**: `pnpm`
 
 ---
@@ -42,7 +41,7 @@ lotengdev-web/
 │   ├── assets/                # Local SVG icons, graphics
 │   ├── components/            # Reusable React components (Navbar, Footer, etc.)
 │   ├── data/                  # Data files (speakers.json, tempat_wfc.json)
-│   ├── pages/                 # Route pages (home, event, speaker, about, contact)
+│   ├── pages/                 # Route pages (home, event, speaker, about)
 │   ├── App.jsx                # Main application component & route configuration
 │   ├── App.css                # Custom global styling
 │   ├── index.css              # Tailwind base imports & directives

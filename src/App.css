@@ -46,8 +46,7 @@ body.dark-mode .navbar {
 body.dark-mode .home-page,
 body.dark-mode .event-page,
 body.dark-mode .speaker-page,
-body.dark-mode .about-page,
-body.dark-mode .contact-page {
+body.dark-mode .about-page {
   background-color: #1a1a1a;
   color: #e0e0e0;
 }
