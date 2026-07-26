@@ -1,13 +1,9 @@
-import React from 'react';
-import LinkedinIcon from '@/assets/icons/linkedin.svg';
-import GithubIcon from '@/assets/icons/github.svg';
-import WebsiteIcon from '@/assets/icons/website.svg';
+import { FaLinkedin, FaGithub, FaGlobe } from 'react-icons/fa6';
 import { Motion } from "../framer-motion";
 
 export function SpeakerPage({ isDarkMode }) {
     // Styles for dark mode
     const pageStyle = isDarkMode ? 'bg-[#121212] text-white' : 'bg-[#F5F5F5] text-black';
-    const iconStyle = isDarkMode ? 'filter brightness-0 invert' : ''; // Ensure icons are visible in dark mode
 
     return (
         <div className={`pt-14 ${pageStyle}`}>
@@ -75,15 +71,15 @@ export function SpeakerPage({ isDarkMode }) {
                                 <div className="w-full font-bold md:text-left text-center text-[24px] text-[color:#606060] mt-[14px]">
                                     {speaker.name}
                                 </div>
-                                <div className="w-full flex md:justify-start justify-center md:items-start items-center">
-                                    <a href="#">
-                                        <img className={`w-[23px] h-[23px] mr-2 ${iconStyle}`} src={LinkedinIcon} alt="icon_linkedin" />
+                                <div className="w-full flex md:justify-start justify-center md:items-start items-center gap-3">
+                                    <a href="#" aria-label="LinkedIn">
+                                        <FaLinkedin className="w-5 h-5 hover:text-[#007BFF] transition-colors" />
                                     </a>
-                                    <a href="#">
-                                        <img className={`w-[23px] h-[23px] mr-2 ${iconStyle}`} src={GithubIcon} alt="icon_github" />
+                                    <a href="#" aria-label="GitHub">
+                                        <FaGithub className="w-5 h-5 hover:text-[#007BFF] transition-colors" />
                                     </a>
-                                    <a href="#">
-                                        <img className={`w-[23px] h-[23px] ${iconStyle}`} src={WebsiteIcon} alt="icon_website" />
+                                    <a href="#" aria-label="Website">
+                                        <FaGlobe className="w-5 h-5 hover:text-[#007BFF] transition-colors" />
                                     </a>
                                 </div>
                             </div>

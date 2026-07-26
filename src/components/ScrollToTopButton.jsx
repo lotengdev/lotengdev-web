@@ -1,6 +1,6 @@
 import  { useCallback, useEffect, useState } from "react";
 import styled from "styled-components";
-import { CgChevronDoubleUp } from "react-icons/cg";
+import { FaAnglesUp } from "react-icons/fa6";
 
 const ScrollToTopButton = () => {
   const [visible, setVisible] = useState(false);
@@ -33,7 +33,7 @@ const ScrollToTopButton = () => {
       {visible && (
         <Wrapper>
           <div className="top-btn" onClick={scrollToTop}>
-            <CgChevronDoubleUp className="up-icon" />
+            <FaAnglesUp className="up-icon" />
           </div>
         </Wrapper>
       )}

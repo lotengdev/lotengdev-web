@@ -1,7 +1,6 @@
 // HomePage.jsx
 import { useEffect, useState } from 'react';
-import TelegramIcon from '@/assets/icons/telegram.svg';
-import GithubIcon from '@/assets/icons/github.svg';
+import { FaPaperPlane, FaGithub } from 'react-icons/fa6';
 
 export function HomePage({ isDarkMode }) {
     const [text, setText] = useState('');
@@ -39,10 +38,10 @@ export function HomePage({ isDarkMode }) {
                     </div>
                     <div className="flex">
                         <a href="https://t.me/lotengdev" target='_blank' rel="noopener noreferrer" className="flex items-center bg-blue-600 px-4 py-3 mr-4 rounded text-white text-[12px]">
-                            <img className="inline mr-3 lg:w-auto lg:h-auto h-[12px] w-[12px]" src={TelegramIcon} alt="Telegram Icon" />Join Group
+                            <FaPaperPlane className="inline mr-2 w-4 h-4" />Join Group
                         </a>
                         <a href="https://github.com/lotengdev/lotengdev-web/" target='_blank' rel="noopener noreferrer" className={`flex items-center px-4 py-2 rounded text-[12px] ${isDarkMode ? 'bg-gray-700 border-gray-600 text-white' : 'bg-neutral-100 border border-solid border-grey text-black'}`}>
-                            <img className="inline mr-3 lg:w-auto lg:h-auto h-[12px] w-[12px]" src={GithubIcon} alt="GitHub Icon" />Contribute
+                            <FaGithub className="inline mr-2 w-4 h-4" />Contribute
                         </a>
                     </div>
                 </div>

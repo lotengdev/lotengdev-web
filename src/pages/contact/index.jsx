@@ -1,7 +1,6 @@
 import React from 'react';
 import emailjs from '@emailjs/browser';
-import emailIcon from '@/assets/icons/email-icon.png';
-import telegramIcon from '@/assets/icons/telegram-icon.png';
+import { FaEnvelope, FaPaperPlane } from 'react-icons/fa6';
 
 export function ContactPage({ isDarkMode }) {
     const [name, setName] = React.useState('');
@@ -38,12 +37,12 @@ export function ContactPage({ isDarkMode }) {
             <form onSubmit={handleSubmit} className={`lg:w-[970px] w-[95%] rounded-3xl p-5 px-10 ${isDarkMode ? 'bg-gray-800 text-white' : 'bg-white text-black'}`}>
                 <div className="text-[color:#41B883] font-medium text-lg mb-4 flex items-center">
                     <span>Contact Loteng Dev</span>
-                    <div className="flex ml-3">
-                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=lotengdev@gmail.com" target="_blank" rel="noopener noreferrer" className="ml-2">
-                            <img src={emailIcon} alt="Email Icon" className="w-6 h-6" />
+                    <div className="flex ml-3 items-center gap-3">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=lotengdev@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email">
+                            <FaEnvelope className="w-5 h-5 hover:text-blue-500 transition-colors" />
                         </a>
-                        <a href="https://t.me/lotengdev" target="_blank" rel="noopener noreferrer" className="ml-2">
-                            <img src={telegramIcon} alt="Telegram Icon" className="w-6 h-6" />
+                        <a href="https://t.me/lotengdev" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+                            <FaPaperPlane className="w-5 h-5 hover:text-blue-500 transition-colors" />
                         </a>
                     </div>
                 </div>

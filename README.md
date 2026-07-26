@@ -31,6 +31,19 @@ Run the dev server:
 pnpm dev
 ```
 
+# 🤖 AI Agent Workflows
+
+This project is optimized for development with AI Agents.
+
+- **Guidelines & Architecture**: See [`AGENTS.md`](./AGENTS.md)
+- **Custom Skills** (`.agent/skills/`):
+  - [`add-speaker`](./.agent/skills/add-speaker.md) - Add new speaker profile & assets
+  - [`add-event`](./.agent/skills/add-event.md) - Manage upcoming/past meetup events
+  - [`add-wfc-spot`](./.agent/skills/add-wfc-spot.md) - Add developer-friendly WFC spots
+  - [`create-component`](./.agent/skills/create-component.md) - Scaffold UI component with Tailwind & Framer Motion
+  - [`create-page`](./.agent/skills/create-page.md) - Add new page route & navigation
+  - [`code-audit`](./.agent/skills/code-audit.md) - Run lint, build, & theme audit checks
+
 # 🚀 Deployment
 
 The website will automaticly deployed to Github Pages using the Github Action.

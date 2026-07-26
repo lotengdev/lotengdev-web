@@ -1,4 +1,4 @@
-import PlayIcon from '@/assets/icons/play.svg';
+import { FaPlay } from 'react-icons/fa6';
 import { Motion } from "../framer-motion"; // For Motion in Text
 
 export function EventPage({ isDarkMode }) {
@@ -51,7 +51,7 @@ export function EventPage({ isDarkMode }) {
                                         className="rounded-[24px] overflow-hidden relative">
                                         <img src="./images/event.png" className="w-full relative" alt="images" />
                                         <div className="absolute top-0 bottom-0 left-0 right-0 bg-[rgba(255,255,255,.5)] sm:hover:opacity-100 sm:opacity-0 opacity-100 transition-all flex justify-center items-center">
-                                            <img src={PlayIcon} className="w-[63px] h-[64px]" alt="play" />
+                                            <FaPlay className="w-12 h-12 text-gray-800 ml-1" />
                                         </div>
                                     </Motion.div>
                                     <Motion.div
