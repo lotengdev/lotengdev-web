@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   build-deploy:
@@ -11,19 +12,29 @@ jobs:
 
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@main
+        uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
         with:
-          submodules: true
-      - name: Publish Site
-        uses: lotengdev/deploy-react-to-github-pages@main
+          version: 10
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          githubToken: ${{ secrets.PERSONAL_TOKEN }}
-          # Remember to set this as a secret (i.e. secrets.PERSONAL_TOKEN).
-          # Don't forget to set the secret value in the project settings.
-          #cname: lotengdev.github.io # Or anything else
-          # Use if you have a custom domain for your site.
-          branch: main # Or anything else
-          # Use if your site is not hosted on the gh-pages branch.
-          repo: lotengdev/lotengdev.github.io
-          # Use if your pushing to a different repo.
-          # Dont add ".git" to the end of the URL (youl'll get 404s).
+          node-version: 22
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install --no-frozen-lockfile
+
+      - name: Build site
+        run: pnpm build
+
+      - name: Deploy to Target Repo
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          external_repository: lotengdev/lotengdev.github.io
+          publish_branch: main
+          publish_dir: ./dist
