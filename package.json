@@ -11,7 +11,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "axios": "^1.7.7",
     "framer-motion": "^12.42.2",
     "prop-types": "^15.8.1",
     "react": "^19.2.8",
